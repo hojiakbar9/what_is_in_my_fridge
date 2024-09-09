@@ -1,0 +1,18 @@
+{%extends "layout.html"%} {%block link%}
+<link
+  rel="stylesheet"
+  href="{{url_for('static', filename='cssfiles/result.css')}}"
+/>
+{%endblock%} {%block title%} Search Result {%endblock%} {%block body%}
+<h1>Result:</h1>
+<div class="gallery">
+  {%for r in recipe %}
+  <a href="{{url_for('recipe_details', recipe_id = r.id) }}">
+    <div class="unit">
+      <img src="{{r.image}}" />
+      <p>{{r.title}}</p>
+    </div>
+  </a>
+  {%endfor%}
+</div>
+{%endblock%}

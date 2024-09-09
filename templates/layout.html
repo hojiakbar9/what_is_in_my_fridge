@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='cssfiles/basic.css')}}"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=PT+Serif:ital@1&family=Source+Sans+Pro&display=swap&family=Borel&display=swap"
+      rel="stylesheet"
+    />
+    {%block link%}{%endblock%} {%block script%}{%endblock%}
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    {%block body%} {%endblock%}
+    <p class="reference">
+      Powered by <a href="https://spoonacular.com/food-api">Spoonacular API</a>
+    </p>
+  </body>
+</html>

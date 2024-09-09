@@ -1,0 +1,37 @@
+{%extends "layout.html"%} {%block title%} What is in my fridge {%endblock%} {%
+block link%}
+<link
+  rel="stylesheet"
+  href="{{url_for('static', filename='cssfiles/index.css')}}"
+/>
+{%endblock%} {%block script%}
+<script src="{{url_for('static', filename='jsfiles/script.js')}}"></script>
+{%endblock%} {%block body%}
+<h1 class="title">What is in my fridge?</h1>
+<div class="form-search">
+  <form action="/" method="post">
+    <div class="infoMessage" id="infoMessage">
+      <i class="fa fa-info-circle"></i>
+      Please type the ingredients before you click the search button.
+    </div>
+    <label for="ingredientInput">Type indgredients you have</label>
+    <input
+      autofocus
+      id="ingredientInput"
+      type="text"
+      name="input"
+      placeholder="e.g potatoes, tomato, egg ..."
+    />
+    <label for="quantity"
+      >How many recipes you would like to get? (Choose between 1 and 100)</label
+    >
+    <input type="number" name="quantity" min="1" max="100" />
+    <input
+      id="searchButton"
+      class="button-primary"
+      type="submit"
+      value="Search"
+    />
+  </form>
+</div>
+{%endblock%}

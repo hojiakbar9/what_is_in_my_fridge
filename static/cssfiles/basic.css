@@ -1,0 +1,26 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Borel', cursive;
+    font-weight: 900;
+    line-height: 1.1;
+    margin:3rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .reference{
+    text-align:center;
+}

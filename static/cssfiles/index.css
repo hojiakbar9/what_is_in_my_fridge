@@ -1,0 +1,22 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+.form-search{
+    margin: 2rem;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    margin: 5rem;
+}
+
+.infoMessage {
+  display: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  color: #059;
+  background-color: #BEF;
+}
+
